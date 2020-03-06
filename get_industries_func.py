@@ -62,16 +62,17 @@ def get_industries(list_c, list_d):
 
     return extract_keyword_count(list_c,list_d,d_indus)
 
-def new_categories(raw_data):
-    '''Takes in a Pandas Dataframe called raw_data. The function will find the "category"
-    column and the "job_description" column and use those to create new, more
+def new_categories():
+    '''Takes no arguments. make sure raw data in same folder. The function will find the "category"
+    column and the "job_description" column of the raw data and use those to create new, more
     accurate industry categorizations. The return value is a pandas dataframe that contains a
-    new list of category names for all 10000 jobs. The function also prints a graph that
+    new list of category names for all 10000 jobs. The function also saves a bubble graph that
     shows the most common industries for data science jobs.'''
 
     import pandas as pd
-    import seaborn
     import matplotlib.pyplot as plt
+    import textwrap
+    import matplotlib.patches as mpatches
     
     raw_data = pd.read_csv('data_scientist_united_states_job_postings_jobspikr.csv')
     data_cat = raw_data['category']
@@ -87,19 +88,45 @@ def new_categories(raw_data):
     
     #Turn new list back into a dataframe 
     new_data_cat = pd.DataFrame(new_list_cat, columns=['category'])
-    
-    #Plot industries against number of jobs
     indus=new_data_cat.groupby('category')['category'].count().reset_index(name='Count')
-    indus=indus.sort_values(by='Count', ascending=False)
-    fig,ax=plt.subplots(figsize=(12,6))
-    ax=seaborn.barplot(y="category", x="Count", data=indus)    
-    ax.set_yticklabels(indus['category'],rotation=0)
-    ax.set_ylabel('Most popular industries',fontsize=12,color='red')
-    ax.set_xlabel('Number of jobs',fontsize=12,color='red')
-    
+    #indus=indus.sort_values(by='Count', ascending=False)
+  
+    #Make a bubble plot of the industries. Larger bubbles=more jobs in that industry
+    indus['percent']=[0, 0, 0, 80, 80, 80, 0, 0, 80, 80, 0, 0, 80, 80]
+    b, c = indus.iloc[0].copy(), indus.iloc[9].copy() #swap some rows for appearance
+    indus.iloc[0],indus.iloc[9] = c,b
+    b, c = indus.iloc[3].copy(), indus.iloc[7].copy()
+    indus.iloc[3],indus.iloc[7] = c,b
+    colors=[]
+    for i in indus['percent']:
+        if i == 0:
+            colors.append('plum')
+        else:
+            colors.append('mediumvioletred')
+    alist=list(range(indus['category'].size))
+    alist2=[1250, 600, 1600, 200, 750, 1700, 1250, 250, 900, 1500, 450, 1100, 1600, 800]
+    myxaxis=pd.Series(alist)
+    myyaxis=pd.Series(alist2)
+    #plot attributes
+    plt.figure(figsize=(8,6))
+    plt.title('What industries do data scientists work in?', fontdict={'fontsize':20})
+    plt.ylim(-350,2100)
+    plt.xlim(-2, 15)
+    plt.scatter(myxaxis,myyaxis, s=indus.Count*7,c=colors,edgecolor='None')
+    x,y=myxaxis,myyaxis
+    for i, txt in enumerate (indus['category']):
+        s=''
+        for k in textwrap.wrap(txt,width=15):
+            s=s+k+'\n'
+        plt.annotate(s.upper(),(x[i],y[i]), wrap=True, weight='bold', size=7, horizontalalignment='center',
+                     verticalalignment='center', fontstretch='semi-condensed', family='fantasy')
+    leg=[mpatches.Patch(color='mediumvioletred', label='Comprise 80% of Data Science Jobs'), mpatches.Patch(color='plum', label='Other 20% of Data Science Jobs')]
+    plt.legend(handles=leg, loc='lower left')
+    plt.axis('off')
+    #Save bubblechart
+    plt.savefig('mybubblechart.png', dpi=1200,transparent=True) 
+
     return new_data_cat
     
-
-
 
 
