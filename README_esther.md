@@ -1,12 +1,16 @@
 get_industries_func.py contains three functions. 
 
 1) Name: extract_keyword_count(mylist1,mylist2,mydict)
+
    Location: Data-Analysis-for-data-science-jobs/src/
+   
    Description:
 Takes two lists of same length of strings and searches them to see if it has any of the values in mydict. If it does, it increments the count of the corresponding key. Returns a list of the same length of mylist with the most popular key for each item in the list. This is a very specific function whose only purpose is to be called by get_industries() function to create new, more acccurate industry categories for each job posting. 
 
 2) Name: get_industries(list_c, list_d):
+
    Location: Data-Analysis-for-data-science-jobs/src/
+   
    Description: 
 Takes a list of job categories and a list of their corresponding job descriptions and calls extract_keyword_count() to search for keywords to categorize the jobs by industry. It returns a new list of categories that is more accurate than the original. Make sure newindustries.txt is in the same folder (this is a dictionary from https://www.labor.ny.gov/agencyinfo/industrykeywords.shtm to give new industry categories to the jobs).
 
