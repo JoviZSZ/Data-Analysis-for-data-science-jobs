@@ -88,44 +88,7 @@ def new_categories():
     
     #Turn new list back into a dataframe 
     new_data_cat = pd.DataFrame(new_list_cat, columns=['category'])
-    indus=new_data_cat.groupby('category')['category'].count().reset_index(name='Count')
-    #indus=indus.sort_values(by='Count', ascending=False)
-  
-    #Make a bubble plot of the industries. Larger bubbles=more jobs in that industry
-    indus['percent']=[0, 0, 0, 80, 80, 80, 0, 0, 80, 80, 0, 0, 80, 80]
-    b, c = indus.iloc[0].copy(), indus.iloc[9].copy() #swap some rows for appearance
-    indus.iloc[0],indus.iloc[9] = c,b
-    b, c = indus.iloc[3].copy(), indus.iloc[7].copy()
-    indus.iloc[3],indus.iloc[7] = c,b
-    colors=[]
-    for i in indus['percent']:
-        if i == 0:
-            colors.append('plum')
-        else:
-            colors.append('mediumvioletred')
-    alist=list(range(indus['category'].size))
-    alist2=[1250, 600, 1600, 200, 750, 1700, 1250, 250, 900, 1500, 450, 1100, 1600, 800]
-    myxaxis=pd.Series(alist)
-    myyaxis=pd.Series(alist2)
-    #plot attributes
-    plt.figure(figsize=(8,6))
-    plt.title('What industries do data scientists work in?', fontdict={'fontsize':20})
-    plt.ylim(-350,2100)
-    plt.xlim(-2, 15)
-    plt.scatter(myxaxis,myyaxis, s=indus.Count*7,c=colors,edgecolor='None')
-    x,y=myxaxis,myyaxis
-    for i, txt in enumerate (indus['category']):
-        s=''
-        for k in textwrap.wrap(txt,width=15):
-            s=s+k+'\n'
-        plt.annotate(s.upper(),(x[i],y[i]), wrap=True, weight='bold', size=7, horizontalalignment='center',
-                     verticalalignment='center', fontstretch='semi-condensed', family='fantasy')
-    leg=[mpatches.Patch(color='mediumvioletred', label='Comprise 80% of Data Science Jobs'), mpatches.Patch(color='plum', label='Other 20% of Data Science Jobs')]
-    plt.legend(handles=leg, loc='lower left')
-    plt.axis('off')
-    #Save bubblechart
-    plt.savefig('mybubblechart.png', dpi=1200,transparent=True) 
-
+    
     return new_data_cat
     
 
