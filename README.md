@@ -1,7 +1,10 @@
-Problem:  Identifying the most common skills sought by employers for a data scientist job. Focus will
+**PROBLEM STATEMENT**:  
+
+Identifying the most common skills sought by employers for a data scientist job. Focus will
 be given to comparing and contrasting requirements, degrees,  hiring locations,tools needed and locations hiring.
 
-Content:
+
+**CONTENT**:
 
 
 All the data files required are in the 'data' folder , while the visualisation plots are in the 'plots' folder.
@@ -27,7 +30,7 @@ Data sets required (availabe in the 'data' folder)
 
 2.newindustries.txt
 
-File 1 : get_industries_func.py contains three functions. 
+**File** 1 : get_industries_func.py contains three functions. 
 
             1) Name: extract_keyword_count(mylist1,mylist2,mydict)
 
@@ -52,7 +55,7 @@ File 1 : get_industries_func.py contains three functions.
 
             new_categories() will return a pandas object that is a 1 x 10000 list of the new category names (essentially a replacement list for the original) and a plot of the number of jobs offered by each industry. 
 
-File 2 :get_skills.py
+**File 2** :get_skills.py
 
             Packages to download nltk 
             file to download 'stopword.txt' ( provided in the data folder)
@@ -67,7 +70,7 @@ File 2 :get_skills.py
 
              get_skills() will return a list of strings of skills with stopwords and punctuation removed.
 
-File 3:nlp_processing.py
+**File 3**:nlp_processing.py
 
             Packages required : wordcloud , collections,matplotlib and re.
 
