@@ -1,3 +1,12 @@
+<style>
+    .reveal .slides {
+        text-align: left;
+    }
+    .reveal .slides section>* {
+        margin-left: 0;
+        margin-right: 0;
+    }
+</style>
 **PROBLEM STATEMENT**:  
 
 Identifying the most common skills sought by employers for a data scientist job. Focus will
@@ -32,7 +41,7 @@ Data sets required (availabe in the 'data' folder)
 
 3.data_scientist_united_states_job_postings_jobspikr.csv
 
-**File** 1 : get_industries_func.py contains three functions. 
+**File** 1 :-> get_industries_func.py contains three functions. 
              Location: Data-Analysis-for-data-science-jobs/src/
 
             1) Name: extract_keyword_count(mylist1,mylist2,mydict)
@@ -42,7 +51,7 @@ Data sets required (availabe in the 'data' folder)
             data_scientist_united_states_job_postings_jobspikr.csv
 
             Description:
-            Takes two lists of same length of strings and searches them to see if it has any of the values in mydict.This is a very specific function whose only purpose is to be called by get_industries() function to create new, more acccurate industry categories for each job posting. 
+            Takes two lists of same length of strings and searches them to see if it has any of the values in mydict.This is a very specific function whose only purpose is to be called by get_industries() function to create new, more acccurate industry categories for each job posting. <-
 
             2) Name: get_industries(list_c, list_d):
 
