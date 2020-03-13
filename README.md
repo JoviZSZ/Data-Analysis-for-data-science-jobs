@@ -8,16 +8,12 @@ All the data files required are in the 'data' folder , while the visualisation p
 
 This read me file contains information regarding every python function we have used. The files are located in the src folder.
 Packages to be Downloaded
+
 nltk
-
 pandas
-
 collections
-
 wordcloud
-
 re
-
 matplotlib
 
 Data sets required (availabe in the 'data' folder
