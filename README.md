@@ -1,6 +1,23 @@
+Problem:  Identifying the most common skills sought by employers for a data scientist job. Focus will
+be given to comparing and contrasting requirements, degrees,  hiring locations,tools needed and locations hiring.
+
+Content:
+
+
 All the data files required are in the 'data' folder , while the visualisation plots are in the 'plots' folder.
 
 This read me file contains information regarding every python function we have used. The files are located in the src folder.
+Packages to be Downloaded
+nltk
+pandas
+collections
+wordcloud
+re
+matplotlib
+
+Data sets required (availabe in the 'data' folder
+stopwords.txt
+newindustries.txt
 
 File 1 : get_industries_func.py contains three functions. 
 
