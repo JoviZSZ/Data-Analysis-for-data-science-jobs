@@ -124,6 +124,11 @@ Data sets required (availabe in the 'data' folder)
 
                wordcloud_plot() doesnt return any parameter.
     
+ **ADDITIONAL FILES**
+1.Two jupyter notebooks are included to show the results of the data exploration performed and the various plots obtaines, as well a notebook detailing all the data visualisation that has been included in the presentation.
+2.The presentation slides have also been uploaded as a pdf.
+3.The plots obtained are shown as png files in the folder 'plots'.
+4.The various checkpoints obtained while creating the jupyter notebook are included in the '.ipynb_checkpoints' folder.
     
     
    
