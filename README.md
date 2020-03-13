@@ -30,31 +30,30 @@ Data sets required (availabe in the 'data' folder)
 
 2.newindustries.txt
 
-3. data_scientist_united_states_job_postings_jobspikr.csv
+3.data_scientist_united_states_job_postings_jobspikr.csv
 
 **File** 1 : get_industries_func.py contains three functions. 
+             Location: Data-Analysis-for-data-science-jobs/src/
 
             1) Name: extract_keyword_count(mylist1,mylist2,mydict)
 
-            Location: Data-Analysis-for-data-science-jobs/src/
-            file to download:newindustries.txt(in 'data' folder)
             
-             data_scientist_united_states_job_postings_jobspikr.csv
+            file to download:newindustries.txt(in 'data' folder)
+            data_scientist_united_states_job_postings_jobspikr.csv
 
             Description:
             Takes two lists of same length of strings and searches them to see if it has any of the values in mydict.This is a very specific function whose only purpose is to be called by get_industries() function to create new, more acccurate industry categories for each job posting. 
 
             2) Name: get_industries(list_c, list_d):
 
-            Location: Data-Analysis-for-data-science-jobs/src/
-
+            
             Description: 
             The function Takes a list of job categories and a list of their corresponding job descriptions and calls    extract_keyword_count() to search for keywords to categorize the jobs by industry. 
             
             get_industries()  returns a new list of categories that is more accurate than the original. 
             3) Name: new_categories()
 
-            Location: Data-Analysis-for-data-science-jobs/src/
+            
 
             Description:
             Takes no arguments. make sure is in same folder. The function will find the "category" column and the "job_description" column of the raw data and use those to create new, more accurate industry categorizations.  This function is called to make the bubble graph and the box and whisker graph in the Jupyter notebook.
