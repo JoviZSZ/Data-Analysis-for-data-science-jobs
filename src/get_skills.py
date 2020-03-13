@@ -93,7 +93,7 @@ def get_skills(description):
     assert isinstance(description, str)
     
     tokens2 = nltk.word_tokenize(description)
-    file = open('stopwords.txt')
+    file = open('data/stopwords.txt')
     stop_words = file.read()
     tagged = nltk.pos_tag(tokens2)
     grammar = r"NP: {<NNP.*>+}"

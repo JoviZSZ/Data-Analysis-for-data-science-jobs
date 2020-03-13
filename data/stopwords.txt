@@ -216,27 +216,20 @@ employee
 status
 posted
 todayability
-data
 data scientist
 strong
 ’
 knowledge
 develop
 engineering
-ai
-phd
 must
 it
-ml
 degree
 senior data scientist
 united states
 build
 excellent
-bachelor ’
-master ’
 job
-bachelor
 collaborate
 us
 identify
@@ -245,7 +238,6 @@ advanced
 work
 provide
 proven
-
 ca
 full time
 ms
@@ -259,8 +251,6 @@ employee
 
 perform
 minimum
-analyze
-master
 oracle
 responsibilities
 reference
@@ -272,18 +262,15 @@ familiarity
 skills
 opportunity employer
 proficiency
-phd
 support
 data sciencecommunicate
 conduct
 days
-analyze
 bs
 today reference
 eeo
 education
 inc
-experienced
 position
 north america
 business
@@ -293,11 +280,9 @@ facebook
 expert
 –
 deep
-masters
 ibm
 lead data scientist
 inc
-artificial intelligence
 department
 technology
 solid
@@ -322,10 +307,7 @@ understanding
 amazon
 word
 opportunity employer all
-research
 design
-
-research
 help
 machine
 performs
@@ -398,7 +380,6 @@ aetna
 apple
 candidate
 comcast
-expertise
 bonus
 gender identity
 md
@@ -425,7 +406,6 @@ optum
 kpis
 able
 “
-analysis
 contract
 designs
 prior
@@ -470,10 +450,7 @@ client
 handson
 security
 virginia
-statistical
-database
 empower
-passion
 —
 abilities
 review
@@ -529,7 +506,6 @@ insurance
 svp
 females
 atlanta
-programming
 extensive
 philadelphia
 competitive
@@ -551,7 +527,6 @@ dc
 executive
 desired skills
 texas
-leadership
 iiot
 significant
 uber
