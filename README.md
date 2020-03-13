@@ -21,9 +21,11 @@ Packages to be Downloaded
 
 6.matplotlib
 
-Data sets required (availabe in the 'data' folder
-stopwords.txt
-newindustries.txt
+Data sets required (availabe in the 'data' folder)
+
+1.stopwords.txt
+
+2.newindustries.txt
 
 File 1 : get_industries_func.py contains three functions. 
 
