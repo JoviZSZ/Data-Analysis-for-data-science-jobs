@@ -25,7 +25,7 @@ Takes no arguments. make sure data_scientist_united_states_job_postings_jobspikr
 
    new_categories() will return a pandas object that is a 1 x 10000 list of the new category names (essentially a replacement list for    the original) and a plot of the number of jobs offered by each industry. 
    
-   File 2 :get_skills.py
+File 2 :get_skills.py
    Packages to download nltk 
    file to download 'stopword.txt' ( provided in the data folder)
    
@@ -39,13 +39,13 @@ Takes no arguments. make sure data_scientist_united_states_job_postings_jobspikr
     
    get_skills() will return a list of strings of skills with stopwords and punctuation removed.
    
-   File 3:nlp_processing.py
+File 3:nlp_processing.py
    Packages required : wordcloud , collections,matplotlib and re.
    
    Location:Data-Analysis-for-data-science-jobs/src/
    
     The python file contains three functions.
-    1.ngrams_generator()
+  1.ngrams_generator()
     Description:
     The function generates ngrams of each description in a series and count frequencies.
     returns the top k frequent ngrams.
@@ -56,7 +56,7 @@ Takes no arguments. make sure data_scientist_united_states_job_postings_jobspikr
     
     ngrams_generator() returns list of top ngrams and their corresponding counts.
     
-    2. ngrams()
+  2. ngrams()
     Description:
      returns ngrams of the sentence.
     :param stop_words: list
@@ -65,7 +65,7 @@ Takes no arguments. make sure data_scientist_united_states_job_postings_jobspikr
     
     ngrams() returns a list of ngrams of the sentence.
     
-    3.pre_process()
+  3.pre_process()
     Description:
     The function takes a description as input
     removes all non-alphanumeric chars, removes http links, map certains 
@@ -76,7 +76,7 @@ Takes no arguments. make sure data_scientist_united_states_job_postings_jobspikr
     
     pre_process() returns processed list
     
-    4.wordcloud_plot()
+  4.wordcloud_plot()
     Description:
     this function accepts a string, and plots a wordcloud with certain settings.
     :param text: str
