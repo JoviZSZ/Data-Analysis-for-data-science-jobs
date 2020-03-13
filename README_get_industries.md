@@ -26,62 +26,62 @@ Takes no arguments. make sure data_scientist_united_states_job_postings_jobspikr
    new_categories() will return a pandas object that is a 1 x 10000 list of the new category names (essentially a replacement list for    the original) and a plot of the number of jobs offered by each industry. 
    
 File 2 :get_skills.py
-   Packages to download nltk 
-   file to download 'stopword.txt' ( provided in the data folder)
+        Packages to download nltk 
+         file to download 'stopword.txt' ( provided in the data folder)
    
-   Location :  Data-Analysis-for-data-science-jobs/src/
+          Location :  Data-Analysis-for-data-science-jobs/src/
    
-   Description :
-   function which takes job description string as input and returns a list of skills from the description.
-    The function also removes some punctuations and stopwords from the description. 
-    :param description: job description string
-    :param type: string    
+           Description :
+            function which takes job description string as input and returns a list of skills from the description.
+             The function also removes some punctuations and stopwords from the description. 
+             :param description: job description string
+             :param type: string    
     
-   get_skills() will return a list of strings of skills with stopwords and punctuation removed.
+            get_skills() will return a list of strings of skills with stopwords and punctuation removed.
    
 File 3:nlp_processing.py
-   Packages required : wordcloud , collections,matplotlib and re.
+            Packages required : wordcloud , collections,matplotlib and re.
    
-   Location:Data-Analysis-for-data-science-jobs/src/
+            Location:Data-Analysis-for-data-science-jobs/src/
    
-    The python file contains three functions.
+             The python file contains three functions.
   1.ngrams_generator()
-    Description:
-    The function generates ngrams of each description in a series and count frequencies.
-    returns the top k frequent ngrams.
-    :param stop_words: list
-    :param seri: pd.Series
-    :param n: int; number of grams
-    :param num_keep: int; number of top phrases to keep
-    
-    ngrams_generator() returns list of top ngrams and their corresponding counts.
-    
+             Description:
+             The function generates ngrams of each description in a series and count frequencies.
+             returns the top k frequent ngrams.
+             :param stop_words: list
+             :param seri: pd.Series
+             :param n: int; number of grams
+             :param num_keep: int; number of top phrases to keep
+
+             ngrams_generator() returns list of top ngrams and their corresponding counts.
+
   2. ngrams()
-    Description:
-     returns ngrams of the sentence.
-    :param stop_words: list
-    :param sentence: list
-    :param n: int ; number of grams
-    
-    ngrams() returns a list of ngrams of the sentence.
+               Description:
+               returns ngrams of the sentence.
+               :param stop_words: list
+               :param sentence: list
+               :param n: int ; number of grams
+
+               ngrams() returns a list of ngrams of the sentence.
     
   3.pre_process()
-    Description:
-    The function takes a description as input
-    removes all non-alphanumeric chars, removes http links, map certains 
-    phrases to certian words, removes the words in stop_words 
-    :param text: str
-    :param stop_words: List[str]
-    :param mapper: set
-    
-    pre_process() returns processed list
+                Description:
+                The function takes a description as input
+                removes all non-alphanumeric chars, removes http links, map certains 
+                phrases to certian words, removes the words in stop_words 
+                :param text: str
+                :param stop_words: List[str]
+                :param mapper: set
+
+                pre_process() returns processed list
     
   4.wordcloud_plot()
-    Description:
-    this function accepts a string, and plots a wordcloud with certain settings.
-    :param text: str
-    
-    wordcloud_plot() doesnt return any parameter.
+                Description:
+                this function accepts a string, and plots a wordcloud with certain settings.
+                :param text: str
+
+                wordcloud_plot() doesnt return any parameter.
     
     
     
