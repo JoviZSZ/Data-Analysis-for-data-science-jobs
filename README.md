@@ -25,7 +25,7 @@ Packages to be Downloaded
 
 6.matplotlib
 
-<u>Installation commands</u> :
+<ins>Installation commands</ins> :
 
 conda install -c conda-forge  package name
 
@@ -132,7 +132,7 @@ pip install package name
 
                wordcloud_plot() doesnt return any parameter.
     
- **ADDITIONAL FILES**
+<ins> **ADDITIONAL FILES** </ins>
 1.Two jupyter notebooks are included to show the results of the data exploration performed and the various plots obtaines, as well a notebook detailing all the data visualisation that has been included in the presentation.
 
 2.The presentation slides have also been uploaded as a pdf.
