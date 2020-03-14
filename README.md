@@ -50,6 +50,7 @@ Data sets required (availabe in the 'data' folder)
                The function Takes a list of job categories and a list of their corresponding job descriptions and calls    extract_keyword_count() to search for keywords to categorize the jobs by industry. 
             
                get_industries()  returns a new list of categories that is more accurate than the original. 
+               
                3) Name: new_categories()            
 
                Description:
