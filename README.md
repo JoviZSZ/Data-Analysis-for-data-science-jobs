@@ -79,7 +79,7 @@ Data sets required (availabe in the 'data' folder)
                Location:Data-Analysis-for-data-science-jobs/src/
 
                The python file contains three functions.
-               1.ngrams_generator()
+            1.ngrams_generator()
   
                Description:
                The function generates ngrams of each description in a series and count frequencies.
