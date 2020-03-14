@@ -141,7 +141,7 @@ pip install package name
 
 4.The various checkpoints obtained while creating the jupyter notebook are included in the '.ipynb_checkpoints' folder.
     
-**PS**
-The output graphs of Plotly package do not show properly on Github, so we used nbviewer to show the complete notebook. Here's the link:
+<ins>**PS**<ins>
+The output graphs of Plotly package do not show properly on Github, so we used nbviewer to show the complete notebook. Here's the link:<br>
 https://nbviewer.jupyter.org/github/JoviZSZ/Data-Analysis-for-data-science-jobs/blob/master/data_visualization.ipynb
    
