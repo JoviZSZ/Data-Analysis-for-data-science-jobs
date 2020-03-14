@@ -29,9 +29,9 @@ Data sets required (availabe in the 'data' folder)
 
 1.stopwords.txt (in 'data' folder)
 
-2.newindustries.txt <a href="https://www.labor.ny.gov/agencyinfo/industrykeywords.shtm"></a>
+2.newindustries.txt <a href="https://www.labor.ny.gov/agencyinfo/industrykeywords.shtm"> Link</a>
 
-3.data_scientist_united_states_job_postings_jobspikr.csv <a href="https://data.world/jobspikr/10000-data-scientist-job-postings-from-the-usa"></a>
+3.data_scientist_united_states_job_postings_jobspikr.csv <a href="https://data.world/jobspikr/10000-data-scientist-job-postings-from-the-usa"> Link </a>
 
 
 
