@@ -133,7 +133,6 @@ pip install package name
                wordcloud_plot() doesnt return any parameter.
     
 <ins> **ADDITIONAL FILES** </ins>
-
 1.Two jupyter notebooks are included to show the results of the data exploration performed and the various plots obtaines, as well a notebook detailing all the data visualisation that has been included in the presentation.
 
 2.The presentation slides have also been uploaded as a pdf.
@@ -142,8 +141,13 @@ pip install package name
 
 4.The various checkpoints obtained while creating the jupyter notebook are included in the '.ipynb_checkpoints' folder.
     
-<ins>**PS**</ins>
-
-The output graphs of Plotly package do not show properly on Github, so we used nbviewer to show the complete notebook. Here's the link:<br>
+**PS**
+The output graphs of Plotly package do not show properly on Github, so we used nbviewer to show the complete notebook. Here's the link:
 https://nbviewer.jupyter.org/github/JoviZSZ/Data-Analysis-for-data-science-jobs/blob/master/data_visualization.ipynb
+
+<ins>**AUTHORS**</ins>: 
+1.Ria Aggarwal
+2.Esther Grossman
+3.Sahana Srikanth
+4.Shengzhe Zhang
    
