@@ -27,11 +27,14 @@ Packages to be Downloaded
 
 Data sets required (availabe in the 'data' folder)
 
-1.stopwords.txt
+1.stopwords.txt (in 'data' folder)
 
-2.newindustries.txt
+2.newindustries.txt <a href="https://www.labor.ny.gov/agencyinfo/industrykeywords.shtm"></a>
 
-3.data_scientist_united_states_job_postings_jobspikr.csv
+3.data_scientist_united_states_job_postings_jobspikr.csv <a href="https://data.world/jobspikr/10000-data-scientist-job-postings-from-the-usa"></a>
+
+
+
 
 **File 1** :   get_industries_func.py contains three functions. 
                Location: Data-Analysis-for-data-science-jobs/src/
