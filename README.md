@@ -1,11 +1,11 @@
 
-**PROBLEM STATEMENT**:  
+<u>**PROBLEM STATEMENT**</u>:  
 
 Identifying the most common skills sought by employers for a data scientist job. Focus will
 be given to comparing and contrasting requirements, degrees,  hiring locations,tools needed and locations hiring.
 
 
-**CONTENT**:
+<u>**CONTENT**</u>:
 
 
 All the data files required are in the 'data' folder , while the visualisation plots are in the 'plots' folder.
@@ -25,14 +25,14 @@ Packages to be Downloaded
 
 6.matplotlib
 
-Installation commands :
+<u>Installation commands</u> :
 
 conda install -c conda-forge  package name
 
 pip install package name
   
 
-Data sets required (availabe in the 'data' folder)
+<u>Data sets required (availabe in the 'data' folder)</u>
 
 1.stopwords.txt (in 'data' folder)
 
