@@ -26,8 +26,9 @@ Packages to be Downloaded
 6.matplotlib
 
 Installation commands
-conda install -c conda-forge <package name>
-pip install <package name>
+conda install -c conda-forge  package name
+
+pip install package name
   
 
 Data sets required (availabe in the 'data' folder)
