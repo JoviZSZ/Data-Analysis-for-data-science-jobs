@@ -86,10 +86,10 @@ pip install package name
 **File 3**:nlp_processing.py
 
                Packages required : wordcloud , collections,matplotlib and re.
-
                Location:Data-Analysis-for-data-science-jobs/src/
 
                The python file contains three functions.
+               
             1.ngrams_generator()
   
                Description:
