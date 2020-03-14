@@ -9,6 +9,7 @@ be given to comparing and contrasting requirements, degrees,  hiring locations,t
 
 
 All the data files required are in the 'data' folder , while the visualisation plots are in the 'plots' folder.
+
 **NOTE**
 The output graphs of Plotly package do not show properly on Github, so we used nbviewer to show the complete notebook. Here's the link:
 https://nbviewer.jupyter.org/github/JoviZSZ/Data-Analysis-for-data-science-jobs/blob/master/data_visualization.ipynb
