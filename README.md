@@ -9,6 +9,9 @@ be given to comparing and contrasting requirements, degrees,  hiring locations,t
 
 
 All the data files required are in the 'data' folder , while the visualisation plots are in the 'plots' folder.
+**NOTE**
+The output graphs of Plotly package do not show properly on Github, so we used nbviewer to show the complete notebook. Here's the link:
+https://nbviewer.jupyter.org/github/JoviZSZ/Data-Analysis-for-data-science-jobs/blob/master/data_visualization.ipynb
 
 This read me file contains information regarding every python function we have used. The files are located in the src folder.
 Packages to be Downloaded
@@ -141,14 +144,14 @@ pip install package name
 
 4.The various checkpoints obtained while creating the jupyter notebook are included in the '.ipynb_checkpoints' folder.
     
-<ins>**PS**</ins>:
 
-The output graphs of Plotly package do not show properly on Github, so we used nbviewer to show the complete notebook. Here's the link:<br>
-https://nbviewer.jupyter.org/github/JoviZSZ/Data-Analysis-for-data-science-jobs/blob/master/data_visualization.ipynb
 
 <ins>**AUTHORS**</ins>: 
 1.Ria Aggarwal
+
 2.Esther Grossman
+
 3.Sahana Srikanth
+
 4.Shengzhe Zhang
    
